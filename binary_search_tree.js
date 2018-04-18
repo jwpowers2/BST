@@ -69,4 +69,18 @@ function BST(){
     }
     return cur;
   }
+  this.size = function(){
+
+    if leaf === undefined{
+      leaf = this.root;
+    }
+    if (!leaf){
+      return 0;
+    } else {
+
+      let left = this.size(leaf.left);
+      let right = this.size(leaf.right);
+    }
+    return 1 + left + right;
+  }
 }
