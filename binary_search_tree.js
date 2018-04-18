@@ -53,4 +53,20 @@ function BST(){
     }
     return false;
   }
+  this.min = function(){
+    let cur = this.root;
+    while(cur.left){
+
+      cur = cur.left;
+    }
+    return cur;
+  }
+  this.max = function(){
+
+    let cur = this.root;
+    while(cur.right){
+      cur = cur.right;
+    }
+    return cur;
+  }
 }
