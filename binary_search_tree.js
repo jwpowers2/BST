@@ -1,4 +1,6 @@
-// binary search tree in JS
+// binary search tree 
+// tree structure with hierarchical linked leaves
+
 
 function leaf(val){
 

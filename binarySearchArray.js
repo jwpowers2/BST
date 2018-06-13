@@ -32,9 +32,6 @@
  }
 
 
-var to_sort = bubbleSort([1,5,4,7,9,20,534,1056,22,45,283]);
-
-
 function binarySearchTree(searchParam,arr){
 
   let sp = searchParam;
@@ -67,5 +64,7 @@ function binarySearchTree(searchParam,arr){
   return false;
 
 }
+
+var to_sort = bubbleSort([1,5,4,7,9,20,534,1056,22,45,283]);
 
 console.log(binarySearchTree(45, to_sort));
