@@ -1,18 +1,26 @@
 // binary search tree 
 // tree structure with hierarchical linked leaves
 
+class Leaf {
+  
+  constructor(val){
 
-function leaf(val){
-
-  this.left = null;
-  this.right = null;
-  this.val = val;
+    this.left = null;
+    this.right = null;
+    this.val = val;
+  }
 
 }
-function BST(){
-  this.root = null;
 
-  this.add = function(val){
+class BST{
+
+  constructor(){
+
+    this.root = null;
+
+  }
+
+  add(val){
 
     if(this.root === null){
 
@@ -42,7 +50,7 @@ function BST(){
     return this;
   }
   }
-  this.contains = function(val){
+  contains(val){
     let cur = this.root;
     while(cur){
       if(val > cur.val){
@@ -55,7 +63,7 @@ function BST(){
     }
     return false;
   }
-  this.min = function(){
+  min(){
     let cur = this.root;
     while(cur.left){
 
@@ -63,7 +71,7 @@ function BST(){
     }
     return cur;
   }
-  this.max = function(){
+  max(){
 
     let cur = this.root;
     while(cur.right){
@@ -71,7 +79,7 @@ function BST(){
     }
     return cur;
   }
-  this.size = function(){
+  size(){
 
     if leaf === undefined{
       leaf = this.root;
@@ -86,3 +94,5 @@ function BST(){
     return 1 + left + right;
   }
 }
+
+module.exports = BST;
